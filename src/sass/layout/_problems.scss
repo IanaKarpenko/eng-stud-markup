@@ -1,0 +1,93 @@
+/* ========== Proplems ========== */
+.problems {
+  &__bg {
+    background-color: #111518;
+  }
+
+  &__title {
+    color: $second-title;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .problems {
+    height: 693px;
+
+    &__container {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 148px;
+      max-width: 320px;
+      height: 693px;
+    }
+
+    &__bg {
+      max-height: 545px;
+    }
+
+    &__title {
+      width: 230px;
+      @include font(20px, 27px);
+    }
+  }
+}
+
+@media screen and (min-width: 727px) and (max-width: 1354px) {
+  .problems {
+    height: 491.5px;
+
+    & .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__bg {
+      max-height: 340px;
+    }
+
+    &__title {
+      width: 478px;
+      @include font(26px, 34px);
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 1355px) {
+  .problems {
+    height: 710px;
+
+    & .container {
+      padding-top: 100px;
+      position: relative;
+    }
+
+    &__container {
+      height: 560px;
+    }
+
+    &__bg {
+      max-height: 560px;
+      background-image: url('../images/problems/burn.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 407px 472px;
+    }
+
+    &__title {
+      width: 850px;
+      @include font(46px, 60px);
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .problems__bg {
+      background-image: url('../images/problems/burn@2x.png');
+    }
+  }
+}
+/* ========== End Problems ========== */
